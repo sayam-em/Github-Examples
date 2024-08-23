@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Run a script
-        run: echo "Event of type: ${{ github.event_name }}"
+      - name: Print payload
+        run: |
+          echo "Repository Dispatch Event Payload: ${{ toJson(github.event) }}"
