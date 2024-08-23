@@ -1,3 +1,5 @@
+name: every1minute
+
 on:
   schedule:
     - cron: '*/1 * * * *'
