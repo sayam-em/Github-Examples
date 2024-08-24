@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: step 1
         id: hello
-        uses: sayam-em/GitHub-Actions-day-1@main
+        uses: sayam-em/GitHub-Actions-day-1@v1.0.0
         with:
           name: "Sayam"
       - name: output
