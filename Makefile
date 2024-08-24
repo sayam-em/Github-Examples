@@ -1,6 +1,9 @@
+# Define the default target
 all:
-	@echo "Running all task"
-	gcc -o myapp main.c
+	@echo "Running all tasks"
+	npm install
+
+# Clean up node_modules
 clean:
-	@echo "cleaning up"
-	rm -f myapp
+	@echo "Cleaning up"
+	rm -rf node_modules
