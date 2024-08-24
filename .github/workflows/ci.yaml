@@ -1,0 +1,23 @@
+name: CI build
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: trying
+        steps:
+            - name: checkout
+              uses: actions/checkout@v4
+            - name: set up build env
+              run: sudo apt-get update && sudo apt-get upgrade && sudo apt install build-essentials -y
+            - name: Make commands permission
+              run: chmod +x ./script.sh
+            - name: Run script
+              run: ./script.sh
+    

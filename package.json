@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "pg": "^8.12.0"
+  },
+  "name": "github-examples",
+  "version": "1.0.0",
+  "description": "A repo containing GitHub for programmatic examples",
+  "main": "client.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
