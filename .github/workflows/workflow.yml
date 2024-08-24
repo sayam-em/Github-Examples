@@ -1,13 +1,20 @@
-name: "workflow_commands"
+name: "work-flow"
 
 on: ["push"]
+
 jobs:
-  my-job:
+  my-jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "group logging"
-        run: |
-          echo "::group::My Group Message"
+        run:  |
+          echo "::group::My Group Mesage"
           echo "Msg 1"
           echo "Msg 2"
           echo "::endgroup::"
+      - name: "step 1"
+        run: |
+          echo "MY_VAL=hello" >> $GITHUB_ENV
+      - name: "step 2"
+        run: |
+          echo $MY_val
